@@ -21,14 +21,21 @@ html {
 }
 
 .covervid-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: default;
+    position: relative;
     max-width: 100%;
     max-height: 100%;
+    cursor: default;
+}
+
+.covervid-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 1349px;
+  z-index: 0;
 }
 
 @font-face {
@@ -42,9 +49,8 @@ html {
   font-weight: bold;
   font-size: 120px;
   line-height: 1;
-  width: 100%;
   color: #fff;
-  margin-top: 250px;
+  margin: 242px 0;
   opacity: .6;
 }
 
@@ -53,6 +59,7 @@ h1 span {
     font-size: 24px;
     letter-spacing: 5px;
     font-weight: 100;
+    margin-bottom: 230px;
     text-transform: uppercase;
     padding-left: 30px;
     margin-top: 15px;
@@ -77,5 +84,103 @@ h1 span {
     height: 50px;
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    opacity: 0.6;
+    opacity: 0.7;
 }
+
+/* Main Content CSS */
+
+.content {
+  cursor: default;
+}
+
+.content h1:after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 3em;
+  background: #1B1C30;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  margin-left: 0%;
+}
+
+.content .float-right:after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 3em;
+  background: #1B1C30;
+  margin-top: 18px;
+  margin-bottom: 15px;
+  margin-right: 0%;
+}
+
+.content h1 {
+  font-family: 'Lane' sans-serif;
+  letter-spacing: -1px;
+  font-size: 50px;
+  line-height: 1;
+  color: #1B1C30;
+  margin-top: 50px;
+}
+
+.content p {
+  font-family: 'Lane' sans-serif;
+  color: #414141;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.btn-download {
+  margin: 10px auto 20px;
+  padding: 10px 28px;
+  text-transform: uppercase;
+  font-family: 'Lane' sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1B1C30;
+  color: #fff;
+  border: 1px solid #1B1C30;
+  transition: all .2s;
+}
+
+.btn-download:hover {
+  color: #1B1C30;
+  background-color: #fff;
+  border: 1px solid #1B1C30;
+  transition: all .2s;
+}
+
+@media (min-width: 768px) {
+  .content .container {
+    width: 768px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* </> */
+
+/* Footer */
+
+.footer {
+  margin: 20px auto;
+  cursor: default;
+}
+
+.footer a{
+  color: #1B1C30;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: lowercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+  transition: all .2s;
+}
+
+.footer a:hover{
+  opacity: .8;
+  transition: all .2s;
+}
+
+/* </> */

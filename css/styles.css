@@ -45,6 +45,7 @@ html {
 .masthead-video-credit:hover {
     opacity: 0.7;
 }
+
 .masthead-arrow {
     position: absolute;
     bottom: 30px;
@@ -61,6 +62,7 @@ html {
     border-bottom: 2px solid #fff;
     opacity: 0.4;
 }
+
 h1 {
     position: absolute;
     width: 100%;

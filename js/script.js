@@ -5,7 +5,7 @@ $(window).resize(fullscreen);
 $(window).scroll(headerParallax);
 
 function fullscreen() {
-    var masthead = $('.masthead');
+    var masthead = $('.covervid-wrapper');
     var windowH = $(window).height();
     var windowW = $(window).width();
 
@@ -15,11 +15,11 @@ function fullscreen() {
 
 function headerParallax() {
     var st = $(window).scrollTop();
-    var headerScroll = $('.masthead h1');
+    var headerScroll = $('.covervid-wrapper h1');
 
     if (st < 500) {
-        headerScroll.css('opacity', 0.4-st/1000);
-        $('.masthead-arrow ').css('opacity', 0.4-st/250);
+        headerScroll.css('opacity', 0.6-st/1000);
+        $('.masthead-arrow ').css('opacity', 0.6-st/250);
         headerScroll.css({
             '-webkit-transform' : 'translateY(' + st/7 + '%)',
             '-ms-transform' : 'translateY(' + st/7 + '%)',
