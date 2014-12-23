@@ -1,1 +1,1 @@
-VIDEO-BACKGROUND <a src="https://giottox.github.io/examples"PAGE</a>
+VIDEO-BACKGROUND PAGE — https://giottox.github.io/examples
